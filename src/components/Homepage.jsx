@@ -22,7 +22,7 @@ class Homepage extends React.Component{
         super(props);
         this.state={
             urls:[],
-            urlinkNewl:''
+            urlinkNewl:'https://youtu.be/QFaFIcGhPoM'
         }
 
         this.showMenu = this.showMenu.bind(this);
@@ -43,22 +43,15 @@ class Homepage extends React.Component{
         this.setState({ urls: items });
      }
 
-    
 
    render()
    {
-    
+
     var urls = []
-
-
-
     myObj.url.map( (dataValue) => {
-        console.log("dataValuedataValuedataValuedataValue===",dataValue.link)
 
         urls.push({'youtubelink':dataValue.link, 'id':dataValue.id , 'title':dataValue.title})
     })
-
-    
   
     return(
     <div>
